@@ -29,7 +29,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: build compile angular
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/angular
           file: ./dockerfile/angular/Dockerfile
@@ -37,7 +37,7 @@ jobs:
           tags: ttbb/compile:angular
           platforms: linux/amd64,linux/arm64
       - name: build compile c
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/c
           file: ./dockerfile/c/Dockerfile
@@ -45,7 +45,7 @@ jobs:
           tags: ttbb/compile:c
           platforms: linux/amd64,linux/arm64
       - name: build compile go
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/go
           file: ./dockerfile/go/Dockerfile
@@ -53,7 +53,7 @@ jobs:
           tags: ttbb/compile:go
           platforms: linux/amd64,linux/arm64
       - name: build compile goc
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/goc
           file: ./dockerfile/goc/Dockerfile
@@ -61,7 +61,7 @@ jobs:
           tags: ttbb/compile:goc
           platforms: linux/amd64,linux/arm64
       - name: build compile jdk8 git
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk8-git
           file: ./dockerfile/jdk8-git/Dockerfile
@@ -69,7 +69,7 @@ jobs:
           tags: ttbb/compile:jdk8-git
           platforms: linux/amd64,linux/arm64 
       - name: build compile jdk8 git gradle
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk8-git-gradle
           file: ./dockerfile/jdk8-git-gradle/Dockerfile
@@ -77,7 +77,7 @@ jobs:
           tags: ttbb/compile:jdk8-git-gradle
           platforms: linux/amd64,linux/arm64                   
       - name: build compile jdk8 git mvn
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk8-git-mvn
           file: ./dockerfile/jdk8-git-mvn/Dockerfile
@@ -85,7 +85,7 @@ jobs:
           tags: ttbb/compile:jdk8-git-mvn
           platforms: linux/amd64,linux/arm64
       - name: build compile jdk11 git
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk11-git
           file: ./dockerfile/jdk11-git/Dockerfile
@@ -93,7 +93,7 @@ jobs:
           tags: ttbb/compile:jdk11-git
           platforms: linux/amd64,linux/arm64 
       - name: build compile jdk11 git gradle
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk11-git-gradle
           file: ./dockerfile/jdk11-git-gradle/Dockerfile
@@ -101,7 +101,7 @@ jobs:
           tags: ttbb/compile:jdk11-git-gradle
           platforms: linux/amd64,linux/arm64                   
       - name: build compile jdk17 git
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk17-git
           file: ./dockerfile/jdk17-git/Dockerfile
@@ -109,7 +109,7 @@ jobs:
           tags: ttbb/compile:jdk17-git
           platforms: linux/amd64,linux/arm64   
       - name: build compile jdk17 git gradle
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk17-git-gradle
           file: ./dockerfile/jdk17-git-gradle/Dockerfile
@@ -117,7 +117,7 @@ jobs:
           tags: ttbb/compile:jdk17-git-gradle
           platforms: linux/amd64,linux/arm64                 
       - name: build compile jdk17 git mvn
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/jdk17-git-mvn
           file: ./dockerfile/jdk17-git-mvn/Dockerfile
@@ -125,7 +125,7 @@ jobs:
           tags: ttbb/compile:jdk17-git-mvn
           platforms: linux/amd64,linux/arm64
       - name: build compile rust
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/rust
           file: ./dockerfile/rust/Dockerfile
@@ -133,7 +133,7 @@ jobs:
           tags: ttbb/compile:rust
           platforms: linux/amd64,linux/arm64
       - name: build compile scala
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: ./dockerfile/scala
           file: ./dockerfile/scala/Dockerfile
